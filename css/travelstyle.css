@@ -1,0 +1,145 @@
+header{
+    font-size: 35px;
+}
+
+a{
+    text-decoration: none;
+    color: brown;
+}
+
+.skip a{
+    background: white;  
+    left: 0;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+}
+
+.skip a{
+    position: absolute;
+    top: -40px;
+    z-index: 1;
+} 
+  
+.skip a:focus {
+    top: 20px;
+}
+
+li.active{
+    color: brown;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+nav ul li{
+    margin: 10px 50px 10px 50px;
+    padding: 10px 20px 10px 20px;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+nav a.current{
+    text-decoration: black wavy underline;
+    text-transform: uppercase;
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+    html{
+        scroll-behavior: auto;
+    }
+  
+    .skip a{
+      -webkit-transition: none;
+      transition: none;
+     }
+  
+    header{
+      background-attachment: initial;
+    }
+
+    .gif {
+        display: none;
+      }
+  }
+
+h1{
+    font-size: 30px;
+    line-height: 2;
+    text-align: center;
+}
+
+h2{
+    font-size: 25px;
+    line-height: 2;
+    text-align: center;
+}
+
+h3{
+    font-size: 25px;
+    line-height: 2;
+    text-align: center;
+}
+
+div > img:nth-child(2) {
+    display: block;
+    margin: 0 auto;
+}
+
+.grid{
+    /*Set width, margin, border properties, background color, and grid properties */
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+    background-color: rgb(88, 144, 248);
+    border-radius: 35px;
+    align-items: start;
+}
+
+.grid div{
+    /* Set border properties, padding, and background color */
+    border: rgb(0, 0, 0) solid 4px;
+    border-radius: 35px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+.grid img{
+    /* Set width, margin, and display */
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+.grid video{
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+.grid div:nth-child(n)  {
+    /* Set box shadow */
+    box-shadow: 3px 0 rgb(43, 86, 165);
+    }
+
+.grid div:nth-child(2n)  {
+    /* Set box shadow */ 
+    box-shadow: -3px 0 rgb(43, 86, 165);
+}
+
+p{
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 20px;
+}
+
+div ul li{
+    margin-left: 80px;
+    font-size: 20px;
+}
