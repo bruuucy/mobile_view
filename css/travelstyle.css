@@ -39,7 +39,7 @@ nav ul li{
 
 nav ul{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
 }
 
