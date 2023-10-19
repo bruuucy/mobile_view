@@ -95,7 +95,7 @@ div > img:nth-child(5) {
     width: 90%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-gap: 50px;
     background-color: rgb(112, 31, 25);
     border-radius: 35px;
@@ -145,4 +145,10 @@ div ol li{
 
 div span{
     margin-left: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        margin-left: 0;
+    }
 }
