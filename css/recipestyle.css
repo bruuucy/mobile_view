@@ -117,16 +117,6 @@ div > img:nth-child(5) {
     margin: 0 auto;
 }
 
-.grid div:nth-child(n)  {
-    /* Set box shadow */
-    box-shadow: 3px 0 rgb(39, 39, 39);
-    }
-
-.grid div:nth-child(2n)  {
-    /* Set box shadow */ 
-    box-shadow: -3px 0 rgb(39, 39, 39);
-}
-
 p{
     margin-left: 40px;
     margin-right: 40px;
@@ -144,11 +134,21 @@ div ol li{
 }
 
 div span{
-    margin-left: 20px;
+    margin-left: 40px;
 }
 
-@media screen and (max-width: 768px) {
-    body {
-        margin-left: 0;
-    }
+.innergrid{
+    /*Set width, margin, border properties, background color, and grid properties */
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    background-color: rgb(88, 144, 248);
+    border-radius: 35px;
+    align-items: center;
+}
+
+.innergrid img:last-child{
+    grid-column: 1 / span 2;
 }

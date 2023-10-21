@@ -91,7 +91,6 @@ div > img:nth-child(2) {
 }
 
 .grid{
-    /*Set width, margin, border properties, background color, and grid properties */
     width: 90%;
     margin: 0 auto;
     display: grid;
@@ -103,7 +102,6 @@ div > img:nth-child(2) {
 }
 
 .grid div{
-    /* Set border properties, padding, and background color */
     border: rgb(0, 0, 0) solid 4px;
     border-radius: 35px;
     padding: 10px;
@@ -111,7 +109,6 @@ div > img:nth-child(2) {
 }
 
 .grid img{
-    /* Set width, margin, and display */
     width: 90%;
     display: block;
     margin: 0 auto;
@@ -121,16 +118,6 @@ div > img:nth-child(2) {
     width: 90%;
     display: block;
     margin: 0 auto;
-}
-
-.grid div:nth-child(n)  {
-    /* Set box shadow */
-    box-shadow: 3px 0 rgb(43, 86, 165);
-    }
-
-.grid div:nth-child(2n)  {
-    /* Set box shadow */ 
-    box-shadow: -3px 0 rgb(43, 86, 165);
 }
 
 p{
@@ -144,8 +131,18 @@ div ul li{
     font-size: 20px;
 }
 
-@media screen and (max-width: 768px) {
-    body {
-        margin-left: 0;
-    }
+
+.innergrid{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+    background-color: rgb(88, 144, 248);
+    border-radius: 35px;
+    align-items: center;
+}
+
+figcaption{
+    margin-left: 20px;
 }

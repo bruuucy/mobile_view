@@ -123,16 +123,6 @@ div > img:nth-child(2) {
     margin: 0 auto;
 }
 
-.grid div:nth-child(n)  {
-    /* Set box shadow */
-    box-shadow: 3px 0 rgb(43, 86, 165);
-    }
-
-.grid div:nth-child(2n)  {
-    /* Set box shadow */ 
-    box-shadow: -3px 0 rgb(43, 86, 165);
-}
-
 p{
     margin-left: 40px;
     margin-right: 40px;
@@ -140,12 +130,17 @@ p{
 }
 
 div ul li{
-    margin-left: 80px;
+    margin-left: 50px;
     font-size: 20px;
 }
 
-@media screen and (max-width: 768px) {
-    body {
-        margin-left: 0;
-    }
+.innergrid{
+    /*Set width, margin, border properties, background color, and grid properties */
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(88, 144, 248);
+    border-radius: 35px;
+    align-items: center;
 }
